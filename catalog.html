@@ -8,10 +8,9 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/style.css">
   </head>
-
   <body>
     <header class="page-heaader" data-test="header">
-      <div class="container">
+      <div class="container header-container">
         <nav class="navigation">
           <a class="navigation-logo" href="#">
             <img src="images/logo.svg" width="140" height="70" alt="Логотип сайта Седона.">
@@ -29,26 +28,24 @@
           </ul>
           <ul class="navigation-list navigation-user">
             <li class="navigation-item">
-              <button class="navigation-btn__saerch" type="button">
+              <a class="navigation-link" href="#">
                 <span class="visually-hidden">Поиск</span>
-              </button>
+              </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-btn__favorites" href="#">
+              <a class="navigation-link" href="#">
                 <span class="visually-hidden">Лайк</span>
                 <span class="favorites__quantity">12</span>
               </a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link__want btn" href="#">Хочу сюда!</a>
-            </li>
           </ul>
+          <a class="navigation-want btn" href="#">Хочу сюда!</a>
         </nav>
       </div>
     </header>
-    <main class="main-catalog" data-test="main">
-      <section class="catalog-hero" data-test="filter">
-        <div class="container">
+    <main class="main-container main-catalog" data-test="main">
+      <div class="container">
+        <section class="catalog-hero" data-test="filter">
           <header class="catalog-hero__header">
             <h1 class="catalog-hero__title">Гостиницы Седоны</h1>
             <ol class="breadcrumbs">
@@ -112,11 +109,9 @@
             </fieldset>
             <fieldset class="filter__group">
               <legend class="filter__title">Стоимость, ₽:</legend>
-              <label>
+              <label class="filter__price">
                 <input class="filter__price-range" type="number" name="price-from" value="0">
                 <span class="filter__label-range">от</span>
-              </label>
-              <label>
                 <input class="filter__price-range" type="number" name="price-to" value="9000">
                 <span class="filter__label-range">до</span>
               </label>
@@ -124,13 +119,13 @@
                 <input class="filter__toddler-range" type="range" name="toddler" min="0" max="9000">
               </label>
             </fieldset>
-            <button class="show-button btn" type="submit">Применить</button>
-            <button class="reset-button btn" type="reset">Сбросить</button>
+            <div class="filter__button">
+              <button class="show-button btn" type="submit">Применить</button>
+              <button class="reset-button btn" type="reset">Сбросить</button>
+            </div>
           </form>
-        </div>
-      </section>
-      <section class="catalog" data-test="catalog">
-        <div class="container">
+        </section>
+        <section class="catalog" data-test="catalog">
           <header class="catalog__header">
             <p class="catalog__header-found">
               Найдено гостиниц:
@@ -140,7 +135,7 @@
               <option value="catalog__header-cheap">Сначала дешевые</option>
             </select>
             <ul class="catalog__header-view view">
-              <li class="view__item">
+              <li class="view__item active">
                 <a href="#" class="view__item-button view__card">
                   <span class="visually-hidden">Показать карточки</span>
                 </a>
@@ -257,20 +252,20 @@
               <a href="#" class="pagination__link">10</a>
             </li>
           </ol>
-        </div>
-      </section>
-      <section class="subscribe-page" data-test="subscribe">
-        <div class="subscribe-container">
-          <h2 class="subscribe-title title">Подпишитесь на рассылку</h2>
-          <p class="subscribe-desc desc">Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <form class="subscribe-form" method="post" action="https://echo.htmlacademy.ru/">
-            <label>
-              <input class="subscribe-form__input" type="email" name="email" placeholder="Ваш e-mail">
-            </label>
-            <button class="subscribe-form__button btn" type="button">Подписаться</button>
-          </form>
-        </div>
-      </section>
+        </section>
+        <section class="subscribe-page" data-test="subscribe">
+          <div class="subscribe-container">
+            <h2 class="subscribe-title title">Подпишитесь на рассылку</h2>
+            <p class="subscribe-desc desc">Только полезная информация и никакого спама, честное бойскаутское!</p>
+            <form class="subscribe-form" method="post" action="https://echo.htmlacademy.ru/">
+              <label>
+                <input class="subscribe-form__input" type="email" name="email" placeholder="Ваш e-mail">
+              </label>
+              <button class="subscribe-form__button btn" type="button">Подписаться</button>
+            </form>
+          </div>
+        </section>
+      </div>
     </main>
     <footer class="main-footer" data-test="footer">
       <div class="container main-footer__container">

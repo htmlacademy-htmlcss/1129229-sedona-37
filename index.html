@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
-    <header class="page-heaader" data-test="header">
+    <header class="page-heaader header-container" data-test="header">
       <div class="container">
         <nav class="navigation">
           <a class="navigation-logo" href="#">
@@ -25,24 +25,22 @@
           </ul>
           <ul class="navigation-list navigation-user">
             <li class="navigation-item">
-              <button class="navigation-btn__saerch" type="button">
+              <a class="navigation-link" href="#">
                 <span class="visually-hidden">Поиск</span>
-              </button>
+              </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-btn__favorites" href="#">
+              <a class="navigation-link" href="#">
                 <span class="visually-hidden">Лайк</span>
                 <span class="favorites__quantity">12</span>
               </a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link__want btn" href="#">Хочу сюда!</a>
-            </li>
           </ul>
+          <a class="navigation-want btn" href="#">Хочу сюда!</a>
         </nav>
       </div>
     </header>
-    <main class="main-index" data-test="main">
+    <main class="main-container main-index" data-test="main">
       <div class="container">
         <h1 class="visually-hidden">Туры в Седону</h1>
         <section class="hero" data-test="hero">
