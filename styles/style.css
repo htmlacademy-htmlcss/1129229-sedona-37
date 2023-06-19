@@ -30,10 +30,6 @@ body {
   color: #333333;
 }
 
-.main-container {
-  flex-grow: 1;
-}
-
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -70,6 +66,33 @@ h1, h2, h3, h4, h5, h6, p {
   overflow: hidden;
 }
 
+.title {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.desc {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.btn {
+  background: #756157;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFF;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+}
+
+.white {
+  color: #FFF;
+}
+
+/*header*/
 .page-heaader {
   background-color: #FFFFFF;
 }
@@ -123,21 +146,16 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 8px 34px;
 }
 
-.btn {
-  background: #756157;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  color: #FFF;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 4px;
+/*index*/
+.main-container {
+  flex-grow: 1;
 }
 
 .main-index {
   background-color: #FFFFFF;
 }
 
+/*section = hero*/
 .hero {
   background-image: url("../images/index-background.jpg");
   background-repeat: no-repeat;
@@ -152,6 +170,7 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0 auto;
 }
 
+/*section = advantages*/
 .advantages {
   margin-bottom: 64px;
 }
@@ -168,19 +187,23 @@ h1, h2, h3, h4, h5, h6, p {
   text-align: center;
 }
 
-.title {
-  font-size: 30px;
-  line-height: 36px;
-  text-transform: uppercase;
-}
-
-.desc {
-  font-size: 22px;
-  line-height: 26px;
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .advantages-item__content {
-  width: 400px;
+  padding: 102px 85px;
+  width: 230px;
+  min-height: 181px;
+}
+
+.advantages-item__desc {
+  text-align: center;
+}
+
+.advantages-item-wide {
+  display: flex;
 }
 
 .advantages-item {
@@ -199,8 +222,31 @@ h1, h2, h3, h4, h5, h6, p {
   flex-direction: row-reverse;
 }
 
+.advantages-item__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+}
+
+.advantages-item__title {
+  margin-bottom: 62px;
+}
+
+/*section = services*/
 .services {
   margin-bottom: 96px;
+}
+
+.services-item__subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
 }
 
 .services__title, .services__desc {
@@ -237,25 +283,12 @@ h1, h2, h3, h4, h5, h6, p {
   min-height: 76px;
 }
 
-.advantages-item__title, .services-item__subtitle {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  text-transform: uppercase;
-  color: #000000;
-  text-align: center;
-}
-
 .services-item__subtitle {
   margin-bottom: 30px;
 }
 
 .services-item__desc {
   text-align: center;
-}
-
-.white {
-  color: #FFF;
 }
 
 .services-list {
@@ -270,6 +303,7 @@ h1, h2, h3, h4, h5, h6, p {
   background: rgba(131, 179, 211, 0.12);
 }
 
+/*section = search*/
 .search {
   width: 592px;
   margin: 0 auto;
@@ -294,6 +328,7 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 8px 50px;
 }
 
+/*section = subscribe*/
 .subscribe {
   padding-top: 96px;
   padding-bottom: 104px;
@@ -330,6 +365,7 @@ h1, h2, h3, h4, h5, h6, p {
   background-size: 100% auto;
 }
 
+/*footer*/
 .main-footer {
   background-color: #FFF;
 }
@@ -346,6 +382,7 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 45px 70px 35px 70px;
 }
 
+/*social*/
 .social-item__vk {
   background: url("../images/icons/vk.svg") no-repeat center center;
   width: 24px;
@@ -370,6 +407,7 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 12px 13px;
 }
 
+/*phohe*/
 .footer-phone-link {
   font-style: normal;
   font-size: 40px;
@@ -385,6 +423,7 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: #FFF;
 }
 
+/*section = catalog-hero*/
 .catalog-hero {
   background-image: url("../images/catalog-background.jpg");
   background-repeat: no-repeat;
@@ -483,13 +522,19 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: transparent;
 }
 
+/*section = catalog*/
 .catalog {
   padding: 0 70px;
+  margin-bottom: 156px;
 }
 
 .catalog__header {
   display: flex;
   margin-bottom: 40px;
+}
+
+.catalog-list {
+  margin-bottom: 80px;
 }
 
 .catalog__header-found {
@@ -570,9 +615,24 @@ h1, h2, h3, h4, h5, h6, p {
 
 .pagination {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.pagination__item {
+  margin-right: 8px;
+}
+
+.pagination__item:last-child {
+  margin-right: 0;
 }
 
 .pagination__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 60px;
+  height: 60px;
+  box-sizing: border-box;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
