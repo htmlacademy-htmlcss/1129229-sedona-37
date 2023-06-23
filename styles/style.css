@@ -704,14 +704,6 @@ img {
   gap: 16px 20px;
 }
 
-.catalog-item:nth-child(3) .stars {
-  width: 90px;
-}
-
-.catalog-item:nth-child(4) .stars {
-  width: 50px;
-}
-
 .catalog__header-found {
   font-weight: 700;
   font-size: 30px;
@@ -823,8 +815,16 @@ img {
 }
 
 .stars {
-  background: url("../images/icons/stars.svg") no-repeat center center;
+  background: url("../images/icons/stars.svg") no-repeat left center;
   margin: 0;
+}
+
+.catalog-item:nth-child(3) .stars {
+  width: 70px;
+}
+
+.catalog-item:nth-child(4) .stars {
+  width: 42px;
 }
 
 .block-rating__value {
@@ -897,5 +897,9 @@ img {
 
 .pagination-current {
   color: #000;
+  background-color: #F2F2F2;
+}
+
+.pagination-current:hover {
   background-color: #F2F2F2;
 }
