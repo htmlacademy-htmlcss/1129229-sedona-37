@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -65,20 +64,20 @@
               <legend class="filter__title">Инфраструктура:</legend>
               <ul class="filter__list">
                 <li class="filter__item">
-                  <label class="filter-control">
-                    <input class="filter-control__input" type="checkbox" name="pool" checked>
+                  <label class="filter-control" for="Pool">
+                    <input class="filter-control__input" id="pool" type="checkbox" name="pool" checked>
                     Бассейн
                   </label>
                 </li>
                 <li class="filter__item">
-                  <label class="filter-control">
-                    <input class="filter-control__input" type="checkbox" name="parking" checked>
+                  <label class="filter-control" for="parking">
+                    <input class="filter-control__input" id="parking" type="checkbox" name="parking" checked>
                     Парковка
                   </label>
                 </li>
                 <li class="filter__item">
-                  <label class="filter-control">
-                    <input class="filter-control__input" type="checkbox" name="wifi"><!--привязать id-->
+                  <label class="filter-control" for="network">
+                    <input class="filter-control__input" id="network" type="checkbox" name="wifi"><!--привязать id-->
                     Wi-Fi
                   </label>
                 </li>
@@ -88,20 +87,20 @@
               <legend class="filter__title">Тип Жилья:</legend>
               <ul class="filter__list">
                 <li class="filter__item">
-                  <label class="filter-control">
-                    <input class="filter-control__input" type="radio" name="product-group" value="hotel" checked>
+                  <label class="filter-control" for="hotel">
+                    <input class="filter-control__input" id="hotel" type="radio" name="product-group" value="hotel" checked>
                     Гостиница
                   </label>
                 </li>
                 <li class="filter__item">
-                  <label class="filter-control">
-                    <input class="filter-control__input" type="radio" name="product-group" value="motel">
+                  <label class="filter-control" for="motel">
+                    <input class="filter-control__input" id="motel" type="radio" name="product-group" value="motel">
                     Мотель
                   </label>
                 </li>
                 <li class="filter__item">
-                  <label class="filter-control">
-                    <input class="control__input" type="radio" name="product-group" value="apartments">
+                  <label class="filter-control" for="apartments">
+                    <input class="control__input" id="apartments" type="radio" name="product-group" value="apartments">
                     Апартаменты
                   </label>
                 </li>
@@ -109,16 +108,16 @@
             </fieldset>
             <fieldset class="filter__group">
               <legend class="filter__title">Стоимость, ₽:</legend>
-              <label class="filter__price">
-                <input class="filter__price-range" type="number" name="price-from" value="0">
+              <label class="filter__price" for="from">
+                <input class="filter__price-range" id="from" type="number" name="price-from" value="0">
                 <span class="filter__label-range">от</span>
               </label>
-              <label class="filter__price">
-                <input class="filter__price-range" type="number" name="price-to" value="9000">
+              <label class="filter__price" for="to">
+                <input class="filter__price-range" id="to" type="number" name="price-to" value="9000">
                 <span class="filter__label-range">до</span>
               </label>
-              <label class="filter__toddler">
-                <input class="filter__toddler-range" type="range" name="toddler" min="0" max="9000">
+              <label class="filter__toddler" for="toddler">
+                <input class="filter__toddler-range" id="toddler" type="range" name="toddler" min="0" max="9000">
               </label>
             </fieldset>
             <div class="filter__button">
@@ -244,8 +243,8 @@
           <h2 class="subscribe-title title">Подпишитесь на рассылку</h2>
           <p class="subscribe-desc desc">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="subscribe-form" method="post" action="https://echo.htmlacademy.ru/">
-            <label>
-              <input class="subscribe-form__input" type="email" name="email" placeholder="Ваш e-mail">
+            <label for="email">
+              <input class="subscribe-form__input" id="email" type="email" name="email" placeholder="Ваш e-mail">
             </label>
             <button class="subscribe-form__button btn" type="button">Подписаться</button>
           </form>
