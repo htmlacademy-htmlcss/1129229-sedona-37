@@ -119,10 +119,11 @@ img {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  width: 600px;
 }
 
 .navigation-user {
-  flex-wrap: nowrap;
+  width: 277px;
 }
 
 .navigation-user .navigation-item:nth-child(2) {
