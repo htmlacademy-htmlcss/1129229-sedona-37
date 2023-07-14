@@ -123,7 +123,7 @@ img {
 }
 
 .navigation-user {
-  width: 277px;
+  width: inherit;
 }
 
 .navigation-user .navigation-item:nth-child(2) {
@@ -264,7 +264,8 @@ img {
   margin-top: 68px;
 }
 
-.advantages__text {
+.advantages__text,
+.services__text {
   width: 660px;
   margin: 0 auto;
 }
@@ -303,6 +304,7 @@ img {
 }
 
 .advantages-item__content {
+  width: 400px;
   padding: 102px 85px;
   color: #FFF;
   position: relative;
@@ -510,6 +512,7 @@ img {
 .subscribe-form {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .subscribe-form__input {
@@ -550,6 +553,7 @@ img {
   text-transform: uppercase;
   padding: 8px 50px;
   border-radius: 0 4px 4px 0;
+  max-width: 400px;
 }
 
 .subscribe-form__button:hover,
@@ -576,7 +580,7 @@ img {
   background-color: #426276;
   background-image: url("../images/subscribe-background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
 }
 
 /*footer*/
@@ -646,6 +650,7 @@ img {
   text-decoration: none;
   color: #000000;
   transition: 0.3s ease-in-out;
+  max-width: 400px;
 }
 
 .footer-phone-link:hover,
@@ -1077,6 +1082,7 @@ img {
   flex-grow: 1;
   margin: 0;
   color: #000;
+  max-width: 540px;
 }
 
 .catalog__header-select {
