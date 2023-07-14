@@ -18,20 +18,20 @@
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link" href="index.html">Главная</a>
+              <a class="navigation-link navigation-link-active" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">О Cедоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-active" href="catalog.html">Гостиницы</a>
+              <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-list navigation-user">
             <li class="navigation-item">
-              <button class="navigation-search" type="button">
+              <a href="#" class="navigation-search">
                 <span class="visually-hidden">Поиск</span>
-              </button>
+              </a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link navigation-favorites" href="#">
@@ -40,7 +40,7 @@
               </a>
             </li>
             <li class="navigation-item">
-              <button class="navigation-button btn" type="button">Хочу сюда!</button>
+              <a href="#" class="navigation-button btn" type="button">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -127,10 +127,10 @@
               <div class="fliter__range">
                 <div class="filter__range-scale">
                   <div class="filter__range-bar">
-                    <button class="filter__range-toggle toggle-min">
+                    <button class="filter__range-toggle toggle-min" type="button">
                       <span class="visually-hidden">Изменить минимальную цену.</span>
                     </button>
-                    <button class="filter__range-toggle toggle-max">
+                    <button class="filter__range-toggle toggle-max" type="button">
                       <span class="visually-hidden">Изменить максимальную цену.</span>
                     </button>
                   </div>
@@ -264,9 +264,9 @@
           <form class="subscribe-form" method="post" action="https://echo.htmlacademy.ru/">
             <label for="email">
               <span class="visually-hidden">Поля ввода для email.</span>
-              <input id="email" class="subscribe-form__input" type="email" name="email" placeholder="Ваш e-mail">
+              <input id="email" class="subscribe-form__input" type="email" name="email" placeholder="Ваш e-mail" required>
             </label>
-            <button class="subscribe-form__button btn" type="button">Подписаться</button>
+            <button class="subscribe-form__button btn" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
