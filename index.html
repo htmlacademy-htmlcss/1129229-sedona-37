@@ -85,8 +85,10 @@
           </ul>
         </section>
         <section class="services">
-          <h2 class="services__title title">Приезжайте в Седону отдохнуть <br> в комфорте и уюте!</h2>
-          <p class="services__desc desc">Опытный персонал и качественное обслуживание!</p>
+          <div class="services__text">
+            <h2 class="services__title title">Приезжайте в Седону отдохнуть <br> в комфорте и уюте!</h2>
+            <p class="services__desc desc">Опытный персонал и качественное обслуживание!</p>
+          </div>
           <ul class="services-list">
             <li class="services-item services-item-house">
               <h3 class="services-item__subtitle">Жильё</h3>
@@ -151,12 +153,12 @@
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="form-date" for="arrival">
               Дата Заезда:
-              <input type="text" class="form-date__input" id="arrival" name="arrival-date" value="27 апреля 2020" placeholder="Укажите дату">
+              <input type="text" class="form-date__input" id="arrival" name="arrival-date" value="27 апреля 2020" placeholder="Укажите дату" required>
               <span class="input-desc input-error">Мы не можем отправить вас в прошлое.</span>
             </label>
             <label class="form-date" for="departure">
               Дата Выезда:
-              <input type="text" class="form-date__input" id="departure" name="date-departure" value="1 сентября 2023" placeholder="Укажите дату">
+              <input type="text" class="form-date__input" id="departure" name="date-departure" value="1 сентября 2023" placeholder="Укажите дату" required>
               <span class="input-desc">На эти даты есть свободные номера. Пока есть.</span>
             </label>
             <div class="count-buttons">
