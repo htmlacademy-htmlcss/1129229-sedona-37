@@ -28,9 +28,9 @@
           </ul>
           <ul class="navigation-list navigation-user">
             <li class="navigation-item">
-              <button class="navigation-search" type="button">
+              <a href="#" class="navigation-search">
                 <span class="visually-hidden">Поиск</span>
-              </button>
+              </a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link navigation-favorites" href="#">
@@ -39,7 +39,7 @@
               </a>
             </li>
             <li class="navigation-item">
-              <button class="navigation-button btn" type="button">Хочу сюда!</button>
+              <a href="#" class="navigation-button btn" type="button">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -116,9 +116,9 @@
           <form class="subscribe-form" method="post" action="https://echo.htmlacademy.ru/">
             <label for="email">
               <span class="visually-hidden">Поля ввода для email.</span>
-              <input id="email" class="subscribe-form__input" type="email" name="email" placeholder="Ваш e-mail">
+              <input id="email" class="subscribe-form__input" type="email" name="email" placeholder="Ваш e-mail" required>
             </label>
-            <button class="subscribe-form__button btn" type="button">Подписаться</button>
+            <button class="subscribe-form__button btn" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
@@ -143,9 +143,9 @@
       </footer>
     </div>
     <!-- Чтобы модалка отобразилась необходимо добавить класс modal-shown -->
-    <div class="modal-container ">
+    <div class="modal-container">
       <div class="modal modal-search">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
@@ -163,18 +163,18 @@
             </label>
             <div class="count-buttons">
               <label for="adults" class="count">Взрослые:</label>
-              <button class="count-buttons__button count-buttons__button_minus"></button>
-              <input id="adults" type="number" class="count-buttons__input" name="count-buttons" value="2">
-              <button class="count-buttons__button count-buttons__button_plus"></button>
+              <button class="count-buttons__button count-buttons__button_minus" type="button" aria-label="Уменьшение количества взрослых."></button>
+              <input id="adults" type="number" class="count-buttons__input" name="count-buttons" value="2" required>
+              <button class="count-buttons__button count-buttons__button_plus" type="button" aria-label="Увеличение количества взрослых."></button>
             </div>
             <div class="count-buttons">
               <label for="children" class="count">Дети:</label>
-              <div class="tooltip">
+              <div class="tooltip" tabindex="0">
                 <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет.Дети до 6 лет размещаются бесплатно.</span>
               </div>
-              <button class="count-buttons__button count-buttons__button_minus"></button>
-              <input id="children" type="number" class="count-buttons__input" name="count-buttons" value="2">
-              <button class="count-buttons__button count-buttons__button_plus"></button>
+              <button class="count-buttons__button count-buttons__button_minus" type="button" aria-label="Уменьшение количества детей."></button>
+              <input id="children" type="number" class="count-buttons__input" name="count-buttons" value="2" required>
+              <button class="count-buttons__button count-buttons__button_plus" type="button" aria-label="Увеличение количества детей."></button>
             </div>
             <button class="search-form__button btn" type="submit">Найти</button>
           </form>
